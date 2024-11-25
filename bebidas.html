@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer & Store</title>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .description-container {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .description-container h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .description-container p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .description-container .characteristics {
+            margin-top: 20px;
+        }
+
+        .description-container .characteristics h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description-container .characteristics ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .description-container .characteristics ul li {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .description-container .button-container {
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e31837;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #c11631;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="bebidas.html" class="nav-link" target="_blank">Bebidas</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link" target="_blank">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="login-button">
+                     <button><a href="#">Entrar</a></button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="menu-button.svg"></button>
+                </div>
+            </div>    
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="teste" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Cerveja Exemplo 330ml</h1>
+            <p>A cerveja Pilsen é um estilo de cerveja popular e refrescante, com cor dourada e espuma branca.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml - 550ml</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="teste" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Cerveja Exemplo 330ml</h1>
+            <p>A cerveja Pilsen é um estilo de cerveja popular e refrescante, com cor dourada e espuma branca.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml - 550ml</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="teste" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Cerveja Exemplo 330ml</h1>
+            <p>A cerveja Pilsen é um estilo de cerveja popular e refrescante, com cor dourada e espuma branca.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml - 550ml</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="teste" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Cerveja Exemplo 330ml</h1>
+            <p>A cerveja Pilsen é um estilo de cerveja popular e refrescante, com cor dourada e espuma branca.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml - 550ml</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Logo</h1>
+                <p>Svazate Store & Beer</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstories%2Fvagasempiracicaba%2F3463430887317050786%2F%3Futm_source%3Dig_story_item_share%26igsh%3DcHprdWl0bnh5c3g1&is_from_rle" class="footer-link" target="_blank" id="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Enter your e-mail to get notified about 
+                    our news solutions
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+
+        </div>
+    </footer>
+
+</body>
+</html>
